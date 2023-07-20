@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/bin/node /home/chappic/.yarn/bin/yarn.js add -D webpack webpack-cli
+
+PATH: 
+  /home/chappic/.yarn/bin:/home/chappic/.config/yarn/global/node_modules/.bin:/home/chappic/.yarn/bin:/home/chappic/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+    "name": "chappic-bank-js-intensive",
+    "version": "1.0.0",
+    "description": "Project for js practice",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Daniil Fedoskov [Chappic]",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

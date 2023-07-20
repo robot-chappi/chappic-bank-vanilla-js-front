@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+
+.select {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: black;
+	background-color: $white;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	padding: 11px 30px;
+	font-size: 18px;
+	font-weight: 700;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-left-color: transparent;
+	}
+
+	> option {
+		font-size: 18px;
+		color: black;
+		background-color: $white;
+		border-radius: 15px;
+		font-weight: 700;
+	}
+}

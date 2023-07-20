@@ -1,0 +1,21 @@
+img {
+	&.full {
+		width: 100%;
+		height: auto;
+	}
+
+	&.big {
+		width: 90%;
+		height: auto;
+	}
+
+	&.middle {
+		width: 60%;
+		height: auto;
+	}
+
+	&.small {
+		width: 30%;
+		height: auto;
+	}
+}

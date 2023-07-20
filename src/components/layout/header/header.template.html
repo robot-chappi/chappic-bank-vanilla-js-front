@@ -1,0 +1,25 @@
+<header class='header'>
+	<component-logo></component-logo>
+	<nav class='navbar'>
+		<button id='menu-toggle'><label>Menu</label><span><i class="fa-solid fa-bars"></i></span></button>
+		<ul id='menu'>
+			<li><a href="/profile">Profile<span><i class="fa-solid fa-user"></i></span></a>
+			</li>
+			<li><a href="/about-us">About us<span><i class="fa-solid fa-star"></i></span></a>
+			</li>
+			<li><a href="/contact">Contact<span><i class="fa-solid fa-phone"></i></span></a>
+			</li>
+			<li><a href="/documents">Documents<span><i class="fa-solid fa-book"></i></span></a>
+			</li>
+			<li><a href="/faqs">FAQs<span><i class="fa-solid fa-question"></i></span></a>
+			</li>
+		</ul>
+	</nav>
+	<div class='right-side' id='auth-side'>
+		<component-search></component-search>
+		<div class='close-sm'>
+			<component-user-item></component-user-item>
+		</div>
+		<component-logout-button></component-logout-button>
+	</div>
+</header>

@@ -1,0 +1,82 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.header {
+	@include flex-horizontal-center;
+	justify-content: space-between;
+
+	> nav.navbar {
+		color: $white;
+		position: relative;
+
+		> button {
+			padding: 10px 20px;
+			border-radius: 0.3rem;
+			font-size: 16px;
+
+			> label {
+				@include media('max', 'md') {
+					display: none;
+				}
+			}
+
+			> span {
+				margin-left: 10px;
+				@include media('max', 'md') {
+					margin-left: 0;
+				}
+			}
+		}
+
+		> ul {
+			position: absolute;
+			top: 2rem;
+			left: -0.7rem;
+			z-index: 100;
+			width: max-content;
+			border-radius: $radius;
+			padding: 10px;
+			border: 1px solid white;
+			background-color: $bg-block;
+			opacity: 0;
+			transform: translateY(-50rem);
+			transition: all 0.5s ease;
+
+			&.open {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			> li {
+				font-size: 18px;
+				text-align: center;
+
+				> a {
+					border: none;
+					transition: color 0.5s ease;
+
+					&:hover {
+						color: $secondary;
+					}
+
+					> span {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.right-side {
+		@include flex-horizontal-center;
+		gap: 20px;
+
+		> div.close-sm {
+			display: block;
+
+			@include media('max', 'sm') {
+				display: none;
+			}
+		}
+	}
+}

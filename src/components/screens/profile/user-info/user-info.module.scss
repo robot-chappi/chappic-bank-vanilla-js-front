@@ -1,0 +1,34 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.user-info {
+	@include dashboard-section;
+
+	.user-info-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: $gap;
+		margin-bottom: $gap;
+
+		> span {
+			background-color: $gray;
+			font-size: 20px;
+			border-radius: $radius;
+			padding: 1rem;
+		}
+
+		> img {
+			border-radius: $radius;
+			height: auto;
+			width: 20%;
+		}
+	}
+
+	> div:last-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: $gap;
+	}
+}

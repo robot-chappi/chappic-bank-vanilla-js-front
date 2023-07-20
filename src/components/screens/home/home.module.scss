@@ -1,0 +1,12 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.home {
+	display: grid;
+	grid-template-columns: 2.2fr 1fr;
+	gap: $gap;
+
+	@include media('max', 'xl') {
+		display: block;
+	}
+}

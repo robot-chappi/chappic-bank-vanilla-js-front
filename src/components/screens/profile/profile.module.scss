@@ -1,0 +1,9 @@
+@import 'src/styles/variables';
+
+.profile {
+	.card-link {
+		display: flex;
+		justify-content: center;
+		margin-top: $gap;
+	}
+}

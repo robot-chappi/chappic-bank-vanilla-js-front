@@ -1,0 +1,47 @@
+@import 'src/styles/variables';
+
+.faqs-ui {
+	padding: 15px;
+
+	> details {
+		margin: 20px 0;
+		background-color: darken($secondary, 9%);
+		padding: 5px;
+		color: $black;
+		border-radius: 10px;
+		font-size: 16px;
+		font-weight: 700;
+
+		> summary {
+			padding: 10px 20px;
+			list-style: none;
+			display: flex;
+			color: $black;
+			justify-content: space-between;
+			background-color: $secondary;
+			border-radius: 10px;
+			font-weight: 700;
+			border-bottom: none;
+
+			&::-webkit-details-marker {
+				display: none;
+			}
+
+			&:after {
+				content: '\002B';
+			}
+		}
+	}
+
+	details[open] summary {
+		margin-bottom: 0.5em;
+	}
+
+	details[open] summary:after {
+		content: '\00D7';
+	}
+
+	details[open] div {
+		padding: 5px 15px;
+	}
+}

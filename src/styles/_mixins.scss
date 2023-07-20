@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+
+@mixin dashboard-section($variant: 'big') {
+	margin-top: $gap;
+	background-color: $bg-block;
+	border-radius: $radius;
+
+	@if $variant == small {
+		padding: 18px 26px;
+	} @else {
+		/* padding: 25px 35px; */
+		padding: 20px 25px;
+	}
+}
+
+@mixin flex-horizontal-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin transition($property: all) {
+	transition: $property 0.3s ease-in-out;
+}
+
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $sizes {
+		@if $media == $size {
+			@media only screen and (#{$minmax}-width: $resolution) {
+				@content;
+			}
+		}
+	}
+}

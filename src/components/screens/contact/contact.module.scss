@@ -1,0 +1,5 @@
+@import 'src/styles/mixins';
+
+.contact {
+	@include dashboard-section;
+}

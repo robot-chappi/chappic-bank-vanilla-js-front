@@ -1,0 +1,25 @@
+@import 'src/styles/variables';
+
+.paragraph {
+	color: $white;
+	border-bottom: 1px solid $primary;
+	animation: animateParagraph 0.7s infinite ease;
+
+	> p {
+		padding: 10px;
+	}
+}
+
+@keyframes animateParagraph {
+	0% {
+		border-bottom: 1px solid $primary;
+	}
+
+	50% {
+		border-bottom: 1px solid $secondary;
+	}
+
+	100% {
+		border-bottom: 1px solid $primary;
+	}
+}

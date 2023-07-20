@@ -1,0 +1,20 @@
+@import 'src/styles/mixins';
+
+.logo {
+	> a {
+		color: #fff;
+		font-weight: 600;
+		font-size: 40px;
+		text-decoration: none;
+
+		@include media('max', 'lg') {
+			font-size: 20px;
+		}
+
+		> span {
+			@include media('max', 'sm') {
+				display: none;
+			}
+		}
+	}
+}

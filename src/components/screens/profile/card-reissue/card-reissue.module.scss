@@ -1,0 +1,11 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.card-reissue {
+	@include dashboard-section;
+
+	> form {
+		display: flex;
+		align-items: center;
+	}
+}

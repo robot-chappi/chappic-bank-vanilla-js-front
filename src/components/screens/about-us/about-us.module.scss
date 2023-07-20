@@ -1,0 +1,5 @@
+@import 'src/styles/mixins';
+
+.about-us {
+	@include dashboard-section;
+}
